@@ -1,0 +1,49 @@
+{
+  "name": "mqtt2rx",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "scripts": {
+    "test": "jest --detectOpenHandles",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z8674558/mqtt2rx.git",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mqtt",
+    "rxjs",
+    "rx",
+    "observer",
+    "pub-sub"
+  ],
+  "author": "Yudai Kiyofuji <own7000hr@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/z8674558/mqtt2rx/issues"
+  },
+  "homepage": "https://github.com/z8674558/mqtt2rx#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "@types/mosca": "^2.8.4",
+    "aedes": "^0.46.1",
+    "jest": "^27.0.6",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.0.5",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.3.5"
+  },
+  "files": [
+    "/dist"
+  ],
+  "dependencies": {
+    "mqtt": "^4.2.8",
+    "rxjs": "^7.3.0"
+  }
+}
